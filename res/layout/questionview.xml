@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+        android:id="@+id/question">
+
+    <ImageView
+            android:layout_width="300dip"
+            android:layout_height="300dip"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/questionImage"
+            ></ImageView>
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/questionImage">
+        <RadioButton android:id="@+id/answer1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="answer1"
+                     android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/answer2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="answer2"
+                     android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/answer3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="answer3"
+                     android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+
+</RelativeLayout>
