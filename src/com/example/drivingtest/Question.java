@@ -13,7 +13,11 @@ public class Question {
 		this.imageUri = uri;
 	}
 	
-	public void setOptions(HashMap<String, Boolean> options) {
+	public int getImageUri() {
+        return imageUri;
+    }
+
+    public void setOptions(HashMap<String, Boolean> options) {
 		this.options = options;
 	}
 	
